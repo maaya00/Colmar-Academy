@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 
-.logo.container {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +21,7 @@ body {
 .logo {
   height: 32px;
   margin-left: 24px;
+  display: flex;
 }
 
 .logo img {
@@ -40,6 +41,9 @@ li {
 
 .banner {
   background-color: lightgray;
+}
+.banner img {
+  width: 60%;
 }
 
 
