@@ -14,14 +14,15 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
 }
 
 .logo {
   height: 32px;
   margin-left: 24px;
   display: flex;
+  align-items: center;
+
 }
 
 .logo img {
@@ -33,6 +34,9 @@ nav {
 
 ul {
   margin-right: 24px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 li {
