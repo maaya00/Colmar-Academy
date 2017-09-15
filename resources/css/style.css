@@ -1,0 +1,48 @@
+html {
+  font-family: Helvetica;
+}
+header {
+  height: 64px;
+}
+div {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+.logo.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logo img {
+}
+
+.logo h2 {
+  float: right;
+}
+
+ul {
+  margin-right: 24px;
+}
+
+li {
+  padding: 0 8px;
+}
+
+.banner {
+  background-color: lightgray;
+}
+
+
+.hidden-menu {
+  display: none;
+}
