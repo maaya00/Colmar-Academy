@@ -38,9 +38,7 @@ nav {
 
 
 }
-.options-top {
 
-}
 .logo img {
     align-items: center;
 }
@@ -132,7 +130,6 @@ nav {
 
 .main-image {
   padding: 2rem 1.5rem;
-
 }
 
 .main-image img {
@@ -233,19 +230,19 @@ nav {
     justify-content: space-between;
     margin-left: 4.5rem;
     margin-right: 4.5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
   }
-  .catalog-text{
+.catalog-text{
     width: 100%;
     padding: 2rem 0rem;
-  }
-  .catalog-text h1{
+}
+.catalog-text h1{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .course-caption {
+}
+.course-caption {
     position: relative;
     float: bottom;
     display: flex;
@@ -254,17 +251,15 @@ nav {
     padding: 1rem 0rem;
     background-color: white;
     height: 10rem;
-  }
-  .item{
+}
+.item{
     flex-grow: 1;
     flex-shrink: 1;
     overflow: scroll;
     width: 30%;
     padding: 1rem;
-  }
-.image {
-
 }
+
 .image img {
   width: 100%;
 }
@@ -282,4 +277,95 @@ padding: .5rem 2rem;
 .more {
 padding: .5rem 2rem;
 line-height: 1.5rem;
+}
+
+.thesis {
+  background-color: white;
+}
+
+.thesis.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.thesis-text{
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.thesis-text h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video{
+  padding: 2rem 1.5rem;
+}
+
+.video video {
+  width: 100%;
+}
+
+.thesis-content {
+  max-width: 60%;
+}
+
+.video-text {
+
+  padding: 0 1.5rem 2rem;
+}
+
+.video-text h1{
+  padding-bottom: 1.5rem;
+}
+
+.video-text h2 {
+  line-height: 1.5rem;
+}
+
+.thesis-info{
+  position: relative;
+  float: right;
+  max-width: 40%;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.event.fisma {
+  display: inline-flex;
+  align-items: center;
+  padding: 0rem 1rem 1rem 1rem;
+
+}
+
+.event img {
+  display: block;
+  width: 35%;
+  height: 100%;
+}
+
+.event.now {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.links {
+  margin-right: 24px;
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.links li {
+  position: relative;
+  padding: 0 8px;
+  font-size: .75rem;
+
+}
+.footer.container h3 {
+  font-size: .75rem;
 }
