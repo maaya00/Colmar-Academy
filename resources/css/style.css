@@ -1,8 +1,11 @@
 html {
   font-family: Helvetica;
+  font-size: 16px;
+  max-width: 70rem;
 }
 header {
-  height: 64px;
+  height: 4rem;
+  align-items: center;
 }
 div {
   display: block;
@@ -11,44 +14,238 @@ div {
 body {
   margin: 0;
 }
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 
 }
-
+.logo.container {
+  align-items: center;
+}
 .logo {
   height: 32px;
   margin-left: 24px;
   display: flex;
+  align-items: center;
+  position: relative;
+
 
 }
+.options-top {
 
+}
 .logo img {
+    align-items: center;
 }
 
 .logo h2 {
   float: right;
+  align-items: center;
+
 }
 
-ul {
+.options {
   margin-right: 24px;
+  display: inline-flex;
+  align-items: center;
+
 }
 
-li {
+.options li {
+  position: relative;
   padding: 0 8px;
+
 }
 
 .banner {
   background-color: lightgray;
+
 }
 .banner img {
-  width: 60%;
+  width:100%;
 }
-
 
 .hidden-menu {
   display: none;
+}
+.bannerimage {
+  max-width: 60%
+}
+
+.banner-image {
+  padding: 2rem 1.5rem;
+
+
+
+}
+.ban-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+
+}
+
+.banner-text {
+  max-width: 25%;
+  padding: 1.5rem;
+
+}
+
+
+.banner-text h1 {
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+.banner-text h2 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+
+}
+.banner-text h3 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-right: 0;
+  text-align: center;
+}
+
+.banner.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-image {
+  padding: 2rem 1.5rem;
+
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.image-text {
+  max-width: 60%;
+}
+
+.main-text {
+
+  padding: 0 1.5rem 2rem;
+}
+
+.main-text h1{
+  padding-bottom: 1.5rem;
+}
+
+
+.main-text h3 {
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+.main-info{
+  position: relative;
+  float: right;
+  max-width: 40%;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.event.orientation {
+  display: inline-flex;
+  align-items: center;
+  padding: 0rem 1rem 1rem 1rem;
+
+}
+
+.event img {
+  display: block;
+  width: 35%;
+  height: 100%;
+}
+
+.event.campus {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.event.lecture {
+  display: inline-flex;
+  align-items: center;
+  background-color: lightgray;
+  padding: 1rem;
+}
+
+.caption {
+  position: relative;
+  float: right;
+  display: flex;
+  width: 65%;
+  padding-left: 1.5rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.read-more {
+  color: blue;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  }
+
+.catalog{
+  background-color: lightgray;
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog-text{
+    width: 100%;
+    padding: 2rem;
+  }
+  .catalog-text h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .course-caption {
+    position: relative;
+    float: bottom;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .item{
+    flex-grow: 1;
+    width: 30%;
+  }
+.image {
+  
+}
+.image img {
+  width: 100%;
 }
