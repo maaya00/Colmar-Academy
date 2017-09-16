@@ -1,7 +1,7 @@
 html {
   font-family: Helvetica;
   font-size: 16px;
-  
+
 }
 header {
   height: 4rem;
@@ -104,12 +104,13 @@ nav {
 
 .banner-text h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 
 }
 .banner-text h2 {
   font-weight: bold;
   margin-top: 1.5rem;
+  font-size: 1.5rem;
 
 }
 .banner-text h3 {
@@ -151,7 +152,9 @@ nav {
   padding-bottom: 1.5rem;
 }
 
-
+.main-text h2 {
+  line-height: 1.5rem;
+}
 .main-text h3 {
   font-size: 0.75rem;
   padding-top: 2rem;
@@ -204,8 +207,14 @@ nav {
 .title {
   font-weight: bold;
   display: inline-flex;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
 }
 
+.details {
+  line-height: 1.5rem;
+  padding-bottom: .5rem;
+}
 .read-more {
   color: blue;
 }
@@ -217,14 +226,18 @@ nav {
 .catalog{
   background-color: lightgray;
 }
+
 .courses {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    margin-bottom: 2rem;
   }
   .catalog-text{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0rem;
   }
   .catalog-text h1{
     display: flex;
@@ -238,14 +251,35 @@ nav {
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding: 1rem 0rem;
+    background-color: white;
+    height: 10rem;
   }
   .item{
     flex-grow: 1;
+    flex-shrink: 1;
+    overflow: scroll;
     width: 30%;
+    padding: 1rem;
   }
 .image {
 
 }
 .image img {
   width: 100%;
+}
+.label {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+
+}
+.type {
+padding: .5rem 2rem;
+}
+
+.more {
+padding: .5rem 2rem;
+line-height: 1.5rem;
 }
