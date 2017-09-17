@@ -1,11 +1,30 @@
-html {
-  font-family: Helvetica;
-  font-size: 16px;
 
+html {
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
 }
+  @keyframes colorchange
+  {
+    0%    {background: #4725B5;}
+    25%   {background: #6245BF;}
+    50%  {background: #883CBB;}
+    75%  {background: #B733B7;}
+    100%  {background: #DC3D8B;}
+  }
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%    {background: #4725B5;}
+    25%   {background: #6245BF;}
+    50%  {background: #883CBB;}
+    75%  {background: #B733B7;}
+    100%  {background: #DC3D8B;}
+  }
+
 header {
   height: 4rem;
   align-items: center;
+  background-color: white;
+
 }
 div {
   display: block;
@@ -13,25 +32,31 @@ div {
 
 body {
   margin: 0;
+
 }
+
 h1 {
   font-weight: bold;
   font-size: 2rem;
+  font-family: 'Julius Sans One', sans-serif;
 }
+
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Julius Sans One', sans-serif;
 }
+
+
 .logo.container {
   align-items: center;
 }
 .logo {
   height: 32px;
-  margin-left: 24px;
   display: flex;
   align-items: center;
   position: relative;
@@ -41,6 +66,7 @@ nav {
 
 .logo img {
     align-items: center;
+    padding-left: 1.5rem;
 }
 
 .logo h2 {
@@ -63,11 +89,16 @@ nav {
 }
 
 .banner {
-  background-color: lightgray;
+  background-color: #DC3D8B;
 
+        animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 30s; /* Chrome and Safari */
+font-family: 'Julius Sans One', sans-serif;
 }
 .banner img {
   width:100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hidden-menu {
@@ -102,24 +133,28 @@ nav {
 
 .banner-text h1 {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  color: white;
+
 
 }
 .banner-text h2 {
   font-weight: bold;
   margin-top: 1.5rem;
   font-size: 1.5rem;
+  color: white;
 
 }
 .banner-text h3 {
   color: white;
   background-color: black;
   width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-top: 1.5rem;
   margin-right: 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .banner.container {
@@ -128,12 +163,20 @@ nav {
   flex-direction: row;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color:#D5D8DB;
+  }
+
 .main-image {
   padding: 2rem 1.5rem;
 }
 
 .main-image img {
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 1rem;
 }
 
 .image-text {
@@ -163,12 +206,23 @@ nav {
   display: block;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
+}
+.event:hover  {
+  background-color: #1F79FF;
+  color: white;
+}
+.read-more:hover{
+  color:white;
 }
 
 .event.orientation {
   display: inline-flex;
   align-items: center;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 2s;
+  margin-bottom:1rem;
 
 }
 
@@ -182,13 +236,17 @@ nav {
   display: inline-flex;
   align-items: center;
   padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 
 .event.lecture {
   display: inline-flex;
   align-items: center;
-  background-color: lightgray;
   padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 2s;
+
 }
 
 .caption {
@@ -199,6 +257,8 @@ nav {
   padding-left: 1.5rem;
   width: 100%;
   flex-direction: column;
+  transition-property: color;
+  transition-duration: 2s;
 }
 
 .title {
@@ -206,6 +266,7 @@ nav {
   display: inline-flex;
   padding-bottom: .5rem;
   font-size: 1.5rem;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .details {
@@ -214,14 +275,13 @@ nav {
 }
 .read-more {
   color: blue;
+  transition-property: color;
+  transition-duration: 2s;
 }
-.main {
-  display: flex;
-  flex-direction: row;
-  }
+
 
 .catalog{
-  background-color: lightgray;
+  background-image: url("../media/images/gradient.jpg.png");
 }
 
 .courses {
@@ -231,6 +291,7 @@ nav {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
     padding-bottom: 2rem;
+
   }
 .catalog-text{
     width: 100%;
@@ -241,6 +302,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 3rem;
+    color: white;
 }
 .course-caption {
     position: relative;
@@ -251,6 +314,7 @@ nav {
     padding: 1rem 0rem;
     background-color: white;
     height: 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .item{
     flex-grow: 1;
@@ -258,20 +322,24 @@ nav {
     overflow: scroll;
     width: 30%;
     padding: 1rem;
+
 }
 
 .image img {
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .label {
   font-weight: bold;
   padding-bottom: 1rem;
   padding-left: 2rem;
   font-size: 1.5rem;
+  font-family: 'Julius Sans One', sans-serif;
 
 }
 .type {
 padding: .5rem 2rem;
+font-family: 'Julius Sans One', sans-serif;
 }
 
 .more {
@@ -280,7 +348,7 @@ line-height: 1.5rem;
 }
 
 .thesis {
-  background-color: white;
+  background-color: #D5D8DB;
 }
 
 .thesis.container {
@@ -298,6 +366,7 @@ line-height: 1.5rem;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 3rem;
 }
 
 .video{
@@ -306,6 +375,8 @@ line-height: 1.5rem;
 
 .video video {
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 1rem;
 }
 
 .thesis-content {
@@ -337,7 +408,9 @@ line-height: 1.5rem;
 .event.fisma {
   display: inline-flex;
   align-items: center;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 2s;
 
 }
 
@@ -351,6 +424,8 @@ line-height: 1.5rem;
   display: inline-flex;
   align-items: center;
   padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 
 .links {
@@ -368,4 +443,66 @@ line-height: 1.5rem;
 }
 .footer.container h3 {
   font-size: .75rem;
+}
+footer {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1000px)
+{
+
+  .header {
+    display: none;
+  }
+  .options-top {
+    display: none;
+  }
+  .hidden-menu {
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  .banner.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.banner-text h1 {
+  font-size: 2rem;
+}
+.banner-text h2 {
+  font-size: 1rem;
+}
+
+
+  .image-text {
+    display: none;
+  .event{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event.fisma {
+    display: none;
+  }
+  .event.now{
+    display:none;
+  }
+.description.container{
+  display: none;
+}
+
+
 }
